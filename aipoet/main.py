@@ -5,7 +5,7 @@ openai.api_key = os.getenv("openaiapikey")
 def getresponse(msg):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": "Write a poem on " + msg + " with 8 to 12 lines where each line contains 4 to 5 words"}]
+        messages=[{"role": "user", "content": "Write a poem on this topic " + msg + " the poem will look like a shakesphere's poem"}]
     )
     reply = response.choices[0].message.content
     return reply
