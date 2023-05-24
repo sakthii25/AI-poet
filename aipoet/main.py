@@ -9,6 +9,7 @@ def getresponse(msg):
     )
     reply = response.choices[0].message.content
     return reply
-msg = st.text_input("Enter a topic: ")
+msg = st.text_input("Enter Poem Title: ")
 if msg:
+    st.write("Here is your Poem:\n")
     st.write(getresponse(msg))
