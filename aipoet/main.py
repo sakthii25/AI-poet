@@ -11,5 +11,4 @@ def getresponse(msg):
     return reply
 msg = st.text_input("Enter Poem Title: ")
 if msg:
-    st.write("Here is your Poem:\n")
-    st.write(getresponse(msg))
+    st.write("Here is your Poem:\n" + getresponse(msg))
